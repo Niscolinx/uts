@@ -1,0 +1,64 @@
+.container{
+    margin: 1rem 10rem 3rem 10rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.header{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    
+    &__logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10rem;
+    }
+    
+
+    &__text{
+        color: #fff;
+        background: rgb(28, 28, 75);
+        margin-left: 20rem;
+        display: flex;
+        margin-top: 3rem;
+
+        .first-text{
+            margin-left: -7rem;
+            padding-right: 5rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    .header__bold{
+        font-size: 2rem;
+    }
+    &__bold{
+
+    }
+
+    &__link{
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-evenly;
+        list-style: none;
+        
+        a:link,
+        a:active{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+
+
+
+}
+
