@@ -3,23 +3,28 @@
     color: #fff;
     
     .first-text{
-        padding-right: 5rem;
+        display: flex;
         font-size: 2rem;
-        text-transform: uppercase;
+        text-transform: uppercase;   
     }
     
-    
-    
-    .header__bold{
-        font-size: 2rem;
+    &__uts{
+        font-size: 7rem;
+        height: 5rem;
+        margin-bottom: 1rem;
     }
+
     &__bold{
-        
+        font-size: 3rem;
+        padding-left: 4rem;
+        flex: 0 0 100%;
     }
-    
-    &__nav{
+
+    &__small{
+        flex: 0 0 100%;
+        padding-left: 4rem;
+
     }
-    
     &__link{
         border-radius: 1rem;
         margin: 1rem 0;
@@ -46,9 +51,9 @@
         border: 5px solid white;
         border-radius: 2rem;
         overflow: hidden;
-        background: $primary-color-1;
-
-
+        backface-visibility: hidden;
+        
+        
         &__slider{
             width: 100%;
         }
@@ -61,6 +66,8 @@
             align-items: center;
             text-align: center;
             align-content: stretch;
+            overflow: hidden;
+            background: $primary-color-1;
         }
         
         &__item:link,
@@ -72,14 +79,71 @@
             padding: 2rem;
             align-self: center;
             font-weight: 600;
-
+            
         }
-
-        &:hover &__item {
-            background: $primary-color;
+        
+        &__item:hover
+        {
+             display: flex;
+             align-content: stretch;
+             background: $secondary-color;
+             color: $primary-color-1;
         }
-    }
-
-
+    }   
 }
 
+.main{
+    background: white;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+
+
+    &__img{
+        float: left;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: .5rem;
+
+        strong{
+            display: block;
+            border-bottom: 2px solid rgb(135, 126, 187);
+            padding-bottom: .4rem;
+        }
+
+    }
+
+    &__ceo-photo{
+        width: 8rem;
+        margin-bottom: .3rem;
+    }
+
+    &__primary{
+        display: flex;
+      
+    }
+
+    &__left{
+        flex: 0 0 70%;
+    
+    }
+
+    &__right{
+        margin-left: 3rem;
+    }
+   
+    &__news-paragraph{
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 0rem 2rem;
+        color: red;
+        height: 5rem;      
+    }
+}
+
+.main-secondary{
+    display: flex;
+}
