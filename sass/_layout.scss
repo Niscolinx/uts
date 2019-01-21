@@ -1,6 +1,7 @@
 $primary-color: #06213F;
 $primary-color-1: #DEDACB;
-
+$primary-color-2: #3b399c;
+$link: #55ABDA;
 $secondary-color: #06213F;
 
 .container{
@@ -8,3 +9,66 @@ $secondary-color: #06213F;
     padding: 2rem;
 }
 
+.main__international{
+    
+    .main__text{
+        justify-content: stretch;
+        padding: 2rem;
+        padding-bottom: 8px;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color-1;
+        margin-bottom: 2rem;
+        text-align: left;
+        margin-left: .5rem;
+    }
+}
+
+
+.footer{
+    font-weight: 500;
+    line-height: 1.7;
+    
+    &-first{
+        display: flex;
+        flex-direction: row;
+        background: white;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        
+        &__left{
+            margin-right: auto;
+        }
+
+        &__second{
+            
+        }
+    }
+
+    &__down{
+        margin-top: 2rem;
+    }
+
+    &__link-first{
+        margin-top: 2.5rem;
+    }
+    &__link:link,
+    &__link:visited{
+        text-decoration: none;
+        color: $link;
+    }
+}
+
+.footer-second{
+    display: flex;
+    color: $link;
+    padding: 2rem;
+
+    &__left{
+        margin-right: auto;
+    }
+
+    &__right{
+
+    }
+}

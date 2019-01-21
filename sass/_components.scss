@@ -97,6 +97,8 @@
     border-radius: 2rem;
     margin: 1rem 0;
     padding: 2rem 1rem;
+    font-weight: 500;
+    font-size: .1rem;
 
 
     &__img{
@@ -107,6 +109,7 @@
         justify-content: center;
         align-items: center;
         padding-right: .5rem;
+        margin: 1rem;
 
         strong{
             display: block;
@@ -116,11 +119,26 @@
 
     }
 
+    &__news{
+        padding-bottom: 8px;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color-1;
+        margin-bottom: 2rem;
+
+        &--ceo{
+            margin-left: 1rem;
+        }
+    }
     &__ceo-photo{
         width: 8rem;
         margin-bottom: .3rem;
     }
 
+    &__ceo-paragraph{
+        text-align: justify;
+        line-height: 1.6;
+        
+    }
     &__primary{
         display: flex;
       
@@ -134,16 +152,76 @@
     &__right{
         margin-left: 3rem;
     }
+
+    &__news-box{
+        border: 1px solid black;
+        box-shadow: 1rem 1rem 5rem black;
+        height: 13rem;      
+        border-radius: 1rem;
+        
+    }
    
     &__news-paragraph{
-        border: 1px solid black;
-        border-radius: 1rem;
         padding: 0rem 2rem;
         color: red;
-        height: 5rem;      
+        line-height: 1.8;
+        text-align: start;
     }
 }
 
-.main-secondary{
+.main__secondary{
+    
+    margin: 3rem 0;
     display: flex;
+    text-align: justify;
+    
+    
+    .products{
+        
+        padding-bottom: 8px;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color-1;
+        margin-bottom: 2rem;
+    }
+    &-small{
+        margin-left: 1rem;
+    }
+}
+
+.main__layout{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    img{
+        width: 2rem;
+    }
+
+    .main__paragraph{
+        padding-bottom: 8px;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color-1;
+        margin-bottom: 2rem;
+    }
+
+    &-1{
+        flex-basis: 30%;
+        align-content: stretch;
+        flex-grow: 1;
+        padding: 1rem;
+    }
+    
+    &--link{
+        margin-top: 2rem;
+
+        a:link,
+        a:visited{
+            color: $link;
+            text-decoration: none;
+
+            &:hover{
+                color: $primary-color-2;
+            }
+        }
+    }
 }
